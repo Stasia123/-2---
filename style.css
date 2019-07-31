@@ -13,16 +13,11 @@
   font-style: normal;
 }
 
-/*html {
-  font-size: 87.5%;
-}*/
 
 body {
   min-width: 320px;
   max-width: 1920px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
   padding: 0;
   font-family: OpenSans-Regular, Arial, sans-serif;
 }
@@ -35,6 +30,7 @@ h1, h2, h3, p {
 
 
 .container {
+  max-width: 640px;
   box-sizing: border-box;
   padding-right: 20px;
   padding-left: 20px;
@@ -77,15 +73,9 @@ h1, h2, h3, p {
 }
 
 .icon {
-  width: 23px;
+  width: 2rem;
   fill: #fff;
-  padding-left: 85px;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-  font-size: 8px;
+  margin-left: 20%;
 }
 
 .header__title {
@@ -96,8 +86,8 @@ h1, h2, h3, p {
 
 .header__appeal-end {
   display: block;
-  padding-left: 1.5em;
-  padding-top: 10px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .footer__title {
@@ -109,7 +99,7 @@ h1, h2, h3, p {
 }
 
 .footer__appeal-start {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .footer__appeal-end {
@@ -118,7 +108,7 @@ h1, h2, h3, p {
 }
 
 .logo {
-  height: 36px;
+  height: 2.5rem;
   fill: #fff;
 }
 
@@ -128,6 +118,9 @@ h1, h2, h3, p {
   text-align: center;
 }
 
+.bottom__link {
+  margin-top: 80px;
+}
 
 .footer__logo {
   text-align: center;
@@ -143,12 +136,6 @@ h1, h2, h3, p {
   border-radius: 15px 15px;
 }
 
-.logo-bottom {
-  height: 36px;
-  fill: #fff;
-  margin-top: 80px;
-}
-
 .store-buttons {
   display: flex;
   flex-direction: column;
@@ -157,7 +144,7 @@ h1, h2, h3, p {
 
 .download__button {
   width: 280px;
-  height: 34px;
+  height: 38px;
   background-color: #5e42b0;
   border-radius: 50px 50px;
   display: flex;
@@ -175,7 +162,6 @@ h1, h2, h3, p {
   background-color: #8c6de7;
 }
 
-
 .download__button:nth-child(n+2) {
   margin-top: 15px;
 }
@@ -183,8 +169,8 @@ h1, h2, h3, p {
 .buttons__appeal {
   display: flex;
   flex-direction: column;
-  font-size: 10px;
-  padding-left: 5px;
+  font-size: 0.8rem;
+  margin-left: 0.7rem;
   align-items: flex-start;
 }
 
@@ -194,7 +180,7 @@ h1, h2, h3, p {
 
 .main-articles__pic {
   position: absolute;
-  top: 8%;
+  top: 6%;
 }
 
 .athlets {
@@ -208,14 +194,13 @@ h1, h2, h3, p {
 .cube__box {
   display: flex;
   position: absolute;
-  left: 15px;
-  bottom: -15px;
+  top: -5rem;
 }
 
 .cube {
   background-color: #5e42b0;
   text-align: center;
-  padding: 22px 24px 27px;
+  padding: 1.5rem 1.75rem;
   font-size: 14px;
   font-family: OpenSans-Bold;
   position: relative;
@@ -224,13 +209,10 @@ h1, h2, h3, p {
 
 .cube:after {
   content: "";
-  width: 16px;
-  height: 4px;
+  display: block;
+  height: 0.3rem;
   background-color: #8f7bc8;
   border-radius: 5px 5px;
-  position: absolute;
-  left: 23px;
-  top: 46px;
 }
 
 .main-articles {
@@ -248,14 +230,13 @@ h1, h2, h3, p {
 }
 
 .article__name {
-  font-size: 50px;
+  font-size: 48px;
   color: #e7e7e7;
   margin-bottom: 240px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .article-header {
+  font-size: 1.5rem;
   margin-bottom: 25px;
   position: relative;
   display: inline-flex;
@@ -263,8 +244,8 @@ h1, h2, h3, p {
 }
 
 .article-number {
-  font-size: 14px;
-  padding-right: 9px;
+  font-size: 1.1rem;
+  margin-right: 9px;
 }
 
 .article-number__white {
@@ -273,13 +254,10 @@ h1, h2, h3, p {
 
 .article-number::after  {
   content: "";
-  width: 16px;
-  height: 4px;
+  display: block;
+  height: 0.3rem;
   background-color: #8f7bc8;
   border-radius: 5px 5px;
-  position: absolute;
-  left: 0;
-  bottom: 8px;
 }
 
 .article-number__white::after  {
@@ -287,7 +265,6 @@ h1, h2, h3, p {
 }
 
 .article-name {
-  font-size: 23px;
   color: #c1c1c1;
 }
 
@@ -312,16 +289,17 @@ h1, h2, h3, p {
 }
 
 .article__pic {
+  display: block;
   max-width: 100%;
 }
 
 .section-description {
-  margin-top: 34px;
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .section-article__heading {
-  font-size: 28px;
+  font-size: 38px;
   color: #e7e7e7;
   margin-bottom: 23px;
 }
@@ -331,13 +309,7 @@ h1, h2, h3, p {
 }
 
 
-/* медиа-запросы в работе...*/
-
 @media (min-width: 641px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
  
   .store-buttons {
     flex-direction: row;
@@ -356,33 +328,33 @@ h1, h2, h3, p {
 
   .buttons__appeal {
     font-size: 14px;
-    padding-left: 26px;
-  }
-
-  .icon {
-    padding-left: 55px;
-    width: 43px;
+    margin-left: 26px;
   }
 
   .article__content {
-    width: 440px;
+    width: 50%;
   }
 
-      .section-article__heading+p {
-        font-size: 24px;
-      }
+  .special__design-content {
+    margin-left: auto;
+  }
 
-      .cube {
-        padding: 38px 42px 41px;
-        font-size: 24px;
-      }
+  .desktop__article__name {
+    margin-left: 50%;
+  }
 
-      .cube:after {
-        width: 25px;
-        height: 5px;
-        left: 42px;
-        top: 73px;
-      }
+  .section-article__heading+p {
+    font-size: 24px;
+  }
+  
+  .connection {
+    background-color: #fff;
+  }
+
+  .cube {
+    padding: 2rem 2.5rem;
+    font-size: 24px;
+  }
 
   .players {
     right: 0;
@@ -395,18 +367,23 @@ h1, h2, h3, p {
   }
 
   .footer__appeal-start {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .footer__appeal-end {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
 
 @media (min-width: 641px) and (max-width: 960px) {
 
+  html {
+    font-size: 112.5%;
+  }
+
   .container {
+    max-width: 960px;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -415,25 +392,11 @@ h1, h2, h3, p {
     font-size: 64px;
     margin-top: 170px;
     margin-bottom: 90px;
-    padding-left: 60px;
   }
-
-  .article-header {
-    font-size: 32px;
-  }
-
+  
   .section-article__heading {
-    font-size: 80px;
-  }
-
-  .article-number {
-    font-size: 20px;
-  }
-
-  .article-number::after {
-    width: 22px;
-    height: 5px;
-    bottom: 2px;
+    font-size: 75px;
+    padding-top: 1rem;
   }
 
   p {
@@ -445,12 +408,19 @@ h1, h2, h3, p {
     padding-bottom: 35px;
   }
 
+  .article__name {
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+    margin-top: 40px;
+  }
+
   .footer__logo {
     margin-bottom: 80px;
-}
+  }
 
   .athlets {
-  left: -19%;
+    left: -15%;
+    top: 10%;
   }
   
   .header {
@@ -469,16 +439,21 @@ h1, h2, h3, p {
 
 @media (min-width: 961px) and (max-width: 1920px) {
 
+  html {
+    font-size: 135%;
+  }
+
   .container {
-  padding-right: 8%;
-  padding-left: 8%;
+    max-width: 1520px;
+    padding-right: 9%;
+    padding-left: 9%;
   }
 
   .header__title {
-  font-size: 5vw;
-  margin-top: 12%;
-  margin-bottom: 9%;
-  letter-spacing: 3px;
+    font-size: 5vw;
+    margin-top: 12%;
+    margin-bottom: 13%;
+    letter-spacing: 3px;
   }
 
   .header__appeal-end {
@@ -486,65 +461,78 @@ h1, h2, h3, p {
   }
 
   .header {
-  background-image: url(images/football_1920.jpg);
+    background-image: url(images/football_1920.jpg);
   }
 
-  .footer{
-  background-image: url(images/game_1920.jpg);
+  .athlets {
+    left: calc(50% - 290px);
+    top: 0;
   }
 
-  .footer__top {
-  display: flex;
-  justify-content: center;
-  padding-top: 226px;
-  padding-bottom: 150px;
-  }
-
-  .footer__title {
-  padding-bottom: 0;
-  margin-left: 40px;
+  .players {
+    top: -8%;
   }
 
   .section-articles {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .section-article {
-  width: 100%;
-  display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-article__heading {
+    font-size: 5vw;
   }
 
   .section-article:nth-child(even) {
   flex-direction: row-reverse;
   }
 
-  #section__container, .picture-box {
-  width: 50%;
+  .section__container, .picture-box {
+    width: 50%;
   }
 
   .cube__box {
-  bottom: 46%;
-  left: 94%; 
+    top: calc(50% - 55px);
+    left: 0;
+    transform: translate(-50%);
   }
 
   .cube__box-reverse {
-  left: -6%;
-  }
-
-  .main-articles__pic {
-    top: 0;
+   left: 100%;
   }
 
   .article__name {
-  font-size: 80px;
-  margin-bottom: 20px;
-  padding-right: 8%;
-  padding-left: 8%;
+    font-size: 80px;
+    margin-top: 70px;
+    margin-bottom: 20px;
   }
 
-  .section-article__heading {
-    font-size: 4vw;
-    margin-top: 35%;
+  .special__padding{
+    padding-left: 8%;
+  }
+
+  .footer {
+  padding-top: 340px;
+  background-image: url(images/game_1920.jpg);
+  }
+
+  .footer__logo {
+    margin-bottom: 0;
+  }
+
+  .footer__top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+
+  .footer__title {
+    margin-left: 40px;
+    margin-bottom: 0; 
   }
 }
