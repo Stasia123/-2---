@@ -181,11 +181,18 @@ h1, h2, h3, p {
 .main-articles__pic {
   position: absolute;
   top: 6%;
+  right: 50%;
+  transform: translate(50%);
 }
 
-.athlets {
+/*.athlets {
   left: 25%;
 }
+
+.players {
+  right: 50%;
+  transform: translate(50%);
+}*/
 
 .picture-box {
   position: relative;
@@ -233,6 +240,7 @@ h1, h2, h3, p {
   font-size: 48px;
   color: #e7e7e7;
   margin-bottom: 240px;
+  text-align: center;
 }
 
 .article-header {
@@ -324,11 +332,20 @@ h1, h2, h3, p {
   .download__button {
     width: 315px;
     height: 75px;
+    justify-content: center;
+  }
+
+  .icon {
+    margin-left: 0; 
   }
 
   .buttons__appeal {
     font-size: 14px;
     margin-left: 26px;
+  }
+
+  .article__name {
+    text-align: left;
   }
 
   .article__content {
@@ -354,6 +371,10 @@ h1, h2, h3, p {
   .cube {
     padding: 2rem 2.5rem;
     font-size: 24px;
+  }
+
+  .main-articles__pic {
+    transform: none
   }
 
   .players {
@@ -393,7 +414,7 @@ h1, h2, h3, p {
     margin-top: 170px;
     margin-bottom: 90px;
   }
-  
+
   .section-article__heading {
     font-size: 75px;
     padding-top: 1rem;
@@ -419,7 +440,8 @@ h1, h2, h3, p {
   }
 
   .athlets {
-    left: -15%;
+    left: -5%;
+    right: 0;
     top: 10%;
   }
   
@@ -465,7 +487,7 @@ h1, h2, h3, p {
   }
 
   .athlets {
-    left: calc(50% - 290px);
+    left: calc(50% - 320px);
     top: 0;
   }
 
